@@ -9,6 +9,7 @@
   <version>2.0.0</version>
 
   <modules>
+    <module>../Core</module>
     <module>../Beans</module>
     <module>../Common</module>
     <module>../Engine</module>
