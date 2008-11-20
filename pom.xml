@@ -9,12 +9,12 @@
   <version>2.0.0</version>
 
   <modules>
+    <module>../Beans</module>
     <module>../Common</module>
     <module>../Engine</module>
     <module>../Guard</module>
     <module>../IdP2</module>
     <module>../WAYF</module>
     <module>../Provider</module>
-    <module>../Beans</module>
   </modules>
 </project>
