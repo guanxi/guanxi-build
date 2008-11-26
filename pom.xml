@@ -8,14 +8,69 @@
   <packaging>pom</packaging>
   <version>2.0.0</version>
 
-  <modules>
-    <module>../Core</module>
-    <module>../Beans</module>
-    <module>../Common</module>
-    <module>../Engine</module>
-    <module>../Guard</module>
-    <module>../IdP2</module>
-    <module>../WAYF</module>
-    <module>../Provider</module>
-  </modules>
+  <profiles>
+	<profile>
+	  <id>guanxi</id>
+	  <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+	  <modules>
+	    <module>../Core</module>
+	    <module>../Beans</module>
+	    <module>../Common</module>
+	    <module>../Engine</module>
+	    <module>../Guard</module>
+	    <module>../IdP2</module>
+	    <module>../WAYF</module>
+	    <module>../Provider</module>
+	  </modules>
+	</profile>
+	
+	<profile>
+	  <id>idp</id>
+	  <modules>
+	    <module>../Core</module>
+	    <module>../Beans</module>
+	    <module>../Common</module>
+	    <module>../IdP2</module>
+	  </modules>
+	</profile>
+
+	<profile>
+	  <id>engine</id>
+	  <modules>
+	    <module>../Core</module>
+	    <module>../Beans</module>
+	    <module>../Common</module>
+	    <module>../Engine</module>
+	  </modules>
+	</profile>
+	
+	<profile>
+	  <id>guard</id>
+	  <modules>
+	    <module>../Core</module>
+	    <module>../Beans</module>
+	    <module>../Common</module>
+	    <module>../Guard</module>
+	  </modules>
+	</profile>
+	
+	<profile>
+	  <id>wayf</id>
+	  <modules>
+	    <module>../Core</module>
+	    <module>../Beans</module>
+	    <module>../Common</module>
+	    <module>../WAYF</module>
+	  </modules>
+	</profile>
+	
+	<profile>
+	  <id>provider</id>
+	  <modules>
+	    <module>../Provider</module>
+	  </modules>
+	</profile>
+  </profiles>
 </project>
