@@ -6,7 +6,7 @@
   <groupId>org.guanxi</groupId>
   <artifactId>guanxi-build</artifactId>
   <packaging>pom</packaging>
-  <version>2.0.2</version>
+  <version>2.0.3</version>
 
   <profiles>
 	<profile>
@@ -15,61 +15,61 @@
         <activeByDefault>true</activeByDefault>
       </activation>
 	  <modules>
-	    <module>../Core</module>
-	    <module>../Beans</module>
-	    <module>../Common</module>
-	    <module>../Engine</module>
-	    <module>../Guard</module>
-	    <module>../IdP2</module>
-	    <module>../WAYF</module>
-	    <module>../Provider</module>
+	    <module>../guanxi-core</module>
+	    <module>../guanxi-beans</module>
+	    <module>../guanxi-common</module>
+	    <module>../guanxi-sp-engine</module>
+	    <module>../guanxi-sp-guard</module>
+	    <module>../guanxi-idp</module>
+	    <module>../guanxi-wayf</module>
+	    <module>../guanxi-provider</module>
 	  </modules>
 	</profile>
 
 	<profile>
-	  <id>idp</id>
+	  <id>guanxi-idp</id>
 	  <modules>
-	    <module>../Core</module>
-	    <module>../Beans</module>
-	    <module>../Common</module>
-	    <module>../IdP2</module>
+	    <module>../guanxi-core</module>
+	    <module>../guanxi-beans</module>
+	    <module>../guanxi-common</module>
+	    <module>../guanxi-idp</module>
 	  </modules>
 	</profile>
 
 	<profile>
-	  <id>engine</id>
+	  <id>guanxi-sp-engine</id>
 	  <modules>
-	    <module>../Core</module>
-	    <module>../Beans</module>
-	    <module>../Common</module>
-	    <module>../Engine</module>
+	    <module>../guanxi-core</module>
+	    <module>../guanxi-beans</module>
+	    <module>../guanxi-common</module>
+	    <module>../guanxi-sp-engine</module>
 	  </modules>
 	</profile>
 
 	<profile>
-	  <id>guard</id>
+	  <id>guanxi-sp-guard</id>
 	  <modules>
-	    <module>../Core</module>
-	    <module>../Beans</module>
-	    <module>../Common</module>
-	    <module>../Guard</module>
+	    <module>../guanxi-core</module>
+	    <module>../guanxi-beans</module>
+	    <module>../guanxi-common</module>
+	    <module>../guanxi-sp-guard</module>
 	  </modules>
 	</profile>
 
 	<profile>
-	  <id>wayf</id>
+	  <id>guanxi-wayf</id>
 	  <modules>
-	    <module>../Core</module>
-	    <module>../Beans</module>
-	    <module>../Common</module>
-	    <module>../WAYF</module>
+	    <module>../guanxi-core</module>
+	    <module>../guanxi-beans</module>
+	    <module>../guanxi-common</module>
+	    <module>../guanxi-wayf</module>
 	  </modules>
 	</profile>
 
 	<profile>
-	  <id>provider</id>
+	  <id>guanxi-provider</id>
 	  <modules>
-	    <module>../Provider</module>
+	    <module>../guanxi-provider</module>
 	  </modules>
 	</profile>
   </profiles>
